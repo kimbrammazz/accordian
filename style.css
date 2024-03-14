@@ -1,9 +1,140 @@
-## Colors
+/* ## Colors
 
 - White: hsl(0, 0%, 100%)
 - Light pink: hsl(275, 100%, 97%)
 - Grayish purple: hsl(292, 16%, 49%)
-- Dark purple: hsl(292, 42%, 14%)
+- Dark purple: hsl(292, 42%, 14%) */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End reset styles */
 
 :root {
 	--white: hsl(0, 0%, 100%);
@@ -11,6 +142,37 @@
 	--grayish-purple: hsl(292, 16%, 49%);
 	--dark-purple: hsl(292, 42%, 14%);
 }
+
 body {
 	font-family: "Work Sans", sans-serif;
+}
+
+@media only screen and (max-width: 375px) {
+	body {
+		background: url("./assets/images/background-pattern-mobile.svg") no-repeat
+			top center fixed;
+		background-color: var(--light-pink);
+		font-family: "Work Sans", sans-serif;
+	}
+
+	.container {
+		margin: auto;
+		margin-top: 5rem;
+		width: 70%;
+		background-color: var(--white);
+		border-radius: 1rem;
+		font-family: "Work Sans", sans-serif;
+	}
+
+	h1 {
+		font-color: var(--dark-purple);
+		font-size: 2rem;
+		font-weight: 700;
+	}
+
+	h2 {
+		font-color: var(--dark-purple);
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
 }
