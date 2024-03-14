@@ -158,21 +158,52 @@ body {
 	.container {
 		margin: auto;
 		margin-top: 5rem;
-		width: 70%;
+		width: 85%;
 		background-color: var(--white);
 		border-radius: 1rem;
-		font-family: "Work Sans", sans-serif;
 	}
 
 	h1 {
-		font-color: var(--dark-purple);
+		color: var(--dark-purple);
 		font-size: 2rem;
 		font-weight: 700;
 	}
 
 	h2 {
-		font-color: var(--dark-purple);
-		font-size: 1.5rem;
+		color: var(--dark-purple);
+		font-size: 1rem;
 		font-weight: 600;
+	}
+
+	.main-title {
+		margin: 1rem;
+	}
+	article {
+		margin: 1rem;
+	}
+
+	p {
+		color: var(--grayish-purple);
+		font-weight: 400;
+		font-style: italic;
+	}
+
+	.question-heading {
+		display: flex;
+		flex-direction: inline;
+		justify-content: space-between;
+	}
+
+	button {
+		background-color: inherit;
+		border: none;
+	}
+
+	.question-text {
+		display: none;
+	}
+
+	.close-icon {
+		display: none;
 	}
 }
