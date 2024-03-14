@@ -161,6 +161,13 @@ body {
 		width: 85%;
 		background-color: var(--white);
 		border-radius: 1rem;
+		padding: 1rem;
+	}
+
+	.main-title {
+		display: flex;
+		flex-direction: inline;
+		align-items: center;
 	}
 
 	h1 {
@@ -203,7 +210,19 @@ body {
 		display: none;
 	}
 
+	.show-text .question-text {
+		display: block;
+	}
+
 	.close-icon {
+		display: none;
+	}
+
+	.show-text .close-icon {
+		display: inline;
+	}
+
+	.show-text .open-icon {
 		display: none;
 	}
 }
