@@ -1,4 +1,5 @@
 const btns = document.querySelectorAll(".question-btn");
+const question = document.querySelector("question");
 
 btns.forEach((btn) => {
 	console.log(btn);
